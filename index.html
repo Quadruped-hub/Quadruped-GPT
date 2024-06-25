@@ -1,26 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuadrupedGPT</title>
     <style>
         body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #3498db; /* 你可以更改这个颜色 */
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-section {
+            margin-bottom: 20px;
+        }
+        .description-section {
+            font-size: 16px;
+            line-height: 1.5;
         }
         h1 {
-            font-size: 3rem;
-            color: #ffffff; /* 文字颜色 */
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>QuadrupedGPT</h1>
+    <div class="container">
+        <h1>QuadrupedGPT</h1>
+        <div class="video-section">
+            <h2>Project Video</h2>
+            <video controls style="width: 100%;">
+                <source src="video/CORL.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="description-section">
+            <h2>Introduction</h2>
+            <p>
+                While pets offer companionship, their limited intelligence restricts advanced reasoning and autonomous interaction with humans. Considering this, we propose QuadrupedGPT, a versatile agent designed to master a broad range of complex tasks with agility comparable to that of a pet. To achieve this goal, the primary challenges include: i) effectively leveraging multimodal observations for decision-making; ii) mastering agile control of locomotion and path planning; iii) developing advanced cognition to execute long-term objectives. QuadrupedGPT processes human command and environmental contexts using a large multimodal model (LMM). Empowered by its extensive knowledge base, our agent autonomously assigns appropriate parameters for adaptive locomotion policies and guides the agent in planning a safe but efficient path towards the goal, utilizing semantic-aware terrain analysis. Moreover, QuadrupedGPT is equipped with problem-solving capabilities that enable it to decompose long-term goals into a sequence of executable subgoals through high-level reasoning. Extensive experiments across various benchmarks confirm that QuadrupedGPT can adeptly handle multiple tasks with intricate instructions, demonstrating a significant step towards the versatile quadruped agents in open-ended worlds. 
+    </div>
 </body>
 </html>
